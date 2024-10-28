@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="landingpage.html">Admin Dashboard</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="index.html" class="sidebar-link">
+                            <i class="fa-solid fa-upload"></i></i>
+                            Submission
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="listofBH.html" class="sidebar-link collapsed" data-bs-target="#pages"
+                            aria-expanded="false"><i class="fa-solid fa-house-chimney-user"></i></i>
+                            List of Boarding House
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts"
+                            aria-expanded="false"><i class="fa-solid fa-users"></i></i>
+                            Manage Users
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="admin-register.html" class="sidebar-link collapsed" data-bs-target="#posts"
+                            aria-expanded="false"><i class="fa-solid fa-arrow-right-from-bracket"></i></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <div class="navbar-collapse navbar">
+                   
+                    <ul class="navbar-nav">
+                     
+                       
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="image/pngwing.com.png" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">John updated their boarding house details</a>
+                                <a href="#" class="dropdown-item">Nico updated their boarding house details</a>
+                                <a href="#" class="dropdown-item">Bassi updated their boarding house details</a>
+                            </div>
+                        </li>
+                    </ul>
+                   
+            
+
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0 illustration">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h4 class="mb-2">
+                                                90
+                                            </h4>
+                                            <p class="mb-2">
+                                                Total of Owners
+                                            </p>
+                                            <div class="mb-0">
+                                                <span class="text-muted">
+                                                    Since Last Month
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                          <div class="card flex-fill border-0 illustration">
+                              <div class="card-body py-4">
+                                  <div class="d-flex align-items-start ">
+                                      <div class="flex-grow-1">
+                                          <h4 class="mb-2">
+                                              90
+                                          </h4>
+                                          <p class="mb-2">
+                                              Total of Users
+                                          </p>
+                                          <div class="mb-0">
+                                              <span class="text-muted">
+                                                  Since Last Month
+                                              </span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                   
+                    <div class="d-flex flex-row-reverse">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                        <form class="d-flex me-2">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                       
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <div class="p-2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Actions
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">All</a></li>
+                                  <li><a class="dropdown-item" href="#">Users</a></li>
+                                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                          
+                    </div>
+                       
+                    </div>
+                     <!-- Table Element -->
+                    
+                    <div class="card border-0">
+                        <div class="card-header">
+
+                            <h5 class="card-title">
+                                List of Users and Owners
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Designation</th>
+                                        <th scope="col">Date Registered</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div class="p-2">
+                                                    <button onclick="gotoH()"type="button" class="btn btn-info"><i class="fa-solid fa-eye"></i></button>
+                                                    <button onclick="gotoUsr()"type="button" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></i></button>
+                                                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></button> 
+
+                                                </div>
+                                            
+                                              
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </main>
+            
+            
+           
+            
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
+
+</body>
+
+</html>
